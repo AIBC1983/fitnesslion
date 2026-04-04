@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<style>
+	    body {
+	        margin: 0;
+	        font-family: Arial, sans-serif;
+	        background-color: #111;
+	        color: white;
+	        text-align: center;
+	    }
+
+	    h1 {
+	        color: #f5c542;
+	        margin-top: 40px;
+	    }
+
+	    table {
+	        margin: 20px auto;
+	        border-collapse: collapse;
+	        width: 80%;
+	        background-color: #222;
+	    }
+
+	    th, td {
+	        border: 1px solid #444;
+	        padding: 12px;
+	        text-align: center;
+	    }
+
+	    th {
+	        background-color: #f5c542;
+	        color: black;
+	    }
+
+	    input, select {
+	        padding: 10px;
+	        margin: 10px;
+	        border-radius: 8px;
+	        border: none;
+	        width: 250px;
+	    }
+
+	    button {
+	        padding: 12px 20px;
+	        background-color: #f5c542;
+	        border: none;
+	        border-radius: 10px;
+	        font-size: 16px;
+	        cursor: pointer;
+	        font-weight: bold;
+	    }
+
+	    button:hover {
+	        background-color: #ffd95e;
+	    }
+
+	    a {
+	        display: inline-block;
+	        margin-top: 20px;
+	        color: #f5c542;
+	        text-decoration: none;
+	        font-weight: bold;
+	    }
+
+	    a:hover {
+	        text-decoration: underline;
+	    }
+	</style>
+</head>
+<body>
+
+<h1>Clases disponibles</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Horario</th>
+        <th>Instructor</th>
+    </tr>
+
+    <tr th:each="c : ${clases}">
+        <td th:text="${c.id}"></td>
+        <td th:text="${c.nombre}"></td>
+        <td th:text="${c.horario}"></td>
+        <td th:text="${c.instructor}"></td>
+    </tr>
+</table>
+
+<br>
+<a href="/">Volver</a>
+
+</body>
+</html>

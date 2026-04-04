@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Lion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #f5c542;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .boton {
+            display: block;
+            padding: 20px;
+            background-color: #f5c542;
+            color: black;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #ffd95e;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Fitness Lion</h1>
+        <p>Aplicación web para la gestión de usuarios, clases y reservas.</p>
+
+        <div class="menu">
+            <a class="boton" href="/registro">Registrar usuario</a>
+            <a class="boton" href="/usuarios">Ver usuarios</a>
+            <a class="boton" href="/clases">Ver clases</a>
+            <a class="boton" href="/reservar">Reservar clase</a>
+            <a class="boton" href="/reservas">Ver reservas</a>
+        </div>
+    </div>
+
+</body>
+</html>
