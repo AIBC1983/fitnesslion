@@ -25,4 +25,4 @@ Aplicación web desarrollada en Java con Spring Boot para la gestión de usuario
 - Visualización de reservas
 
 ## Autor
-Alumno DAM - Proyecto FitnessLion
+Alumno: Antonio Iván Baeza Castillo 2º DAM - Proyecto FitnessLion web
