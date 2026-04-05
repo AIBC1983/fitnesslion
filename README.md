@@ -14,6 +14,14 @@ Aplicación web desarrollada como prototipo (MVP) para la gestión de usuarios, 
 
 ---
 
+## Evolución del proyecto
+
+Durante el desarrollo del proyecto se realizó una transición tecnológica, pasando de una implementación inicial en C# a una versión final desarrollada en Java con Spring Boot.
+
+Este cambio permitió una mejor adaptación al desarrollo de aplicaciones web y una integración más sencilla con la base de datos mediante el uso de JPA y Thymeleaf.
+
+---
+
 ## Funcionalidades
 
 - Registro de usuarios
@@ -88,4 +96,4 @@ Este proyecto representa una primera versión funcional (MVP), cumpliendo con lo
 
 Alumno: Antonio Iván Baeza Castillo  
 Ciclo: 2º DAM  
-Proyecto: Fitness Lion web
+Proyecto: Fitness Lion
