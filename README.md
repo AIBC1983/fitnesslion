@@ -96,4 +96,4 @@ Este proyecto representa una primera versión funcional (MVP), cumpliendo con lo
 
 Alumno: Antonio Iván Baeza Castillo  
 Ciclo: 2º DAM  
-Proyecto: Fitness Lion
+Proyecto: Fitness Lion web
