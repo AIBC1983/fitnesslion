@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Reservar clase</title>
+    <title>Login</title>
     <style>
         body {
             background-color: black;
@@ -34,7 +34,7 @@
             color: #f1c40f;
         }
 
-        select {
+        input {
             width: 100%;
             padding: 12px;
             border-radius: 12px;
@@ -65,34 +65,22 @@
 </head>
 <body>
 
-    <h1>Reservar clase</h1>
+    <h1>Iniciar sesión</h1>
 
     <div class="form-container">
-        <form th:action="@{/reservar}" method="post">
+        <form action="/login" method="post">
 
             <div class="campo">
-                <label for="usuarioId">Usuario</label>
-                <select name="usuarioId" id="usuarioId" required>
-                    <option value="">Selecciona un usuario</option>
-                    <option th:each="usuario : ${usuarios}"
-                            th:value="${usuario.id}"
-                            th:text="${usuario.email}">
-                    </option>
-                </select>
+                <label>Email</label>
+                <input type="text" name="email" required>
             </div>
 
             <div class="campo">
-                <label for="claseId">Clase</label>
-                <select name="claseId" id="claseId" required>
-                    <option value="">Selecciona una clase</option>
-                    <option th:each="clase : ${clases}"
-                            th:value="${clase.id}"
-                            th:text="${clase.nombre + ' - ' + clase.horario + ' - ' + clase.instructor}">
-                    </option>
-                </select>
+                <label>Contraseña</label>
+                <input type="password" name="password" required>
             </div>
 
-            <button type="submit">Reservar</button>
+            <button type="submit">Entrar</button>
         </form>
 
         <a href="/">Volver</a>

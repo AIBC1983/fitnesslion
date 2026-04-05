@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Fitness Lion</title>
     <style>
         body {
-            margin: 0;
+            background-color: black;
+            color: #f1c40f;
             font-family: Arial, sans-serif;
-            background-color: #111;
-            color: white;
             text-align: center;
-        }
-
-        .contenedor {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 40px;
+            margin: 0;
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: #f5c542;
+            margin-top: 80px;
+            font-size: 70px;
         }
 
         p {
-            font-size: 20px;
-            margin-bottom: 40px;
-            color: #ddd;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 50px;
         }
 
-        .menu {
+        .container {
+            width: 600px;
+            margin: auto;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 700px;
-            margin: 0 auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
         }
 
-        .boton {
+        .btn {
             display: block;
-            padding: 20px;
-            background-color: #f5c542;
+            background-color: #e6c75a;
             color: black;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
-            border-radius: 12px;
-            transition: 0.3s;
+            padding: 18px;
+            border-radius: 15px;
+            text-align: center;
         }
 
-        .boton:hover {
-            background-color: #ffd95e;
-            transform: scale(1.03);
+        .btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <div class="contenedor">
-        <h1>Fitness Lion</h1>
-        <p>Aplicación web para la gestión de usuarios, clases y reservas.</p>
+    <h1>Fitness Lion</h1>
+    <p>Aplicación web para la gestión de usuarios, clases y reservas.</p>
 
-        <div class="menu">
-            <a class="boton" href="/registro">Registrar usuario</a>
-            <a class="boton" href="/usuarios">Ver usuarios</a>
-            <a class="boton" href="/clases">Ver clases</a>
-            <a class="boton" href="/reservar">Reservar clase</a>
-            <a class="boton" href="/reservas">Ver reservas</a>
-        </div>
+    <div class="container">
+        <a href="/registro" class="btn">Registrar usuario</a>
+        <a href="/usuarios" class="btn">Ver usuarios</a>
+
+        <a href="/clases" class="btn">Ver clases</a>
+        <a href="/reservar" class="btn">Reservar clase</a>
+
+        <a href="/login" class="btn">Iniciar sesión</a>
+        <a href="/reservas" class="btn">Ver reservas</a>
     </div>
 
 </body>
